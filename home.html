@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page For E-commerce Site</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<title>E-Commerce SHOPPING</title>
+
+<!--META TAGS-->
+<meta name="viewport" content="width=device-width, initial-scal=1, user-scalable=no">
+<meta name="author" content="Mahesh">
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<header>
+<div class="menu">
+<table>
+<tr>
+<td><img src="./images/logo.png" alt="logo" class="logo"></td>
+<td>
+<input type="text" class="search" name="search" placeholder="Search"><button type="submit"><i class="fa fa-search"></i></button>
+</td>
+<td>
+<span>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Account 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Profile</a>
+      <a href="#">Orders</a>
+      <a href="#">Wishlist</a>
+      <a href="./login.html">LogIn/LogOut</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn cart"><i class="fa fa-shopping-cart"></i> <span class="value">2</span>
+    </button>
+    <div class="dropdown-content cart-content">
+      <a>
+      <ul>
+      <li>
+      <img src="./images/Samsung Galaxy Book2.jpeg" alt="Item">
+      </li>
+      <li>
+      <span class="title">Samsung Galaxy Book2</span>
+      <span class="sub-title"><i class="fa fa-rupee"></i>59,000<span>
+      </li>
+      <li><i class="fa fa-trash"></i></li>
+      </ul>
+      <ul>
+      <li>
+     <img src="./images/kurkure .png" alt="Item">
+      </li>
+      <li>
+      <span class="title">Kurkure Masala Munch Namkeen, 142g</span>
+      <span class="sub-title"><i class="fa fa-rupee"></i>30<span>
+      </li>
+      <li><i class="fa fa-trash"></i></li>
+      </ul>
+      <button type="submit"  onclick="cart()" class="btn1">CheckOut</button>
+      </a>
+    </div>
+  </div> 
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <div class="dropdown">
+    <button class="dropbtn">Electronics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content mega-dropdown">
+      <div class="row  column1">
+        <div class="column">
+          <h3>Mobiles</h3>
+          <a href="#">Mi</a>
+          <a href="#">Samsung</a>
+          <a href="#">RealMe</a>
+        </div>
+        <div class="column">
+          <h3>Mobile Accessories</h3>
+          <a href="#">Power Bank</a>
+          <a href="#">OTG</a>
+          <a href="#">Covers</a>
+        </div>
+        <div class="column">
+          <h3>Speakers</h3>
+          <a href="#">Home Theater</a>
+          <a href="#">Portable</a>
+          <a href="#">Sound Bars</a>
+        </div>
+        <div class="column">
+          <h3>Featured</h3>
+          <a href="#">Apple Store</a>
+          <a href="#">Mcrosoft Store</a>
+          <a href="#">Inferno Store</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Men & Women 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content mega-dropdown">
+      <div class="row">
+        <div class="column">
+          <h3>Clothing</h3>
+          <a href="#">Men Jeans</a>
+          <a href="#">Women Jeggings</a>
+          <a href="#">Trousers</a>
+        </div>
+        <div class="column">
+          <h3>Grooming</h3>
+          <a href="#">Perfumes</a>
+          <a href="#">Deodrants</a>
+          <a href="#">Hair Groom</a>
+        </div>
+        <div class="column">
+          <h3>Footware</h3>
+          <a href="#">Casual</a>
+          <a href="#">Boots</a>
+          <a href="#">Slippers</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Home & Furniture 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content mega-dropdown">
+      <div class="row">
+        <div class="column">
+          <h3>Kitchen</h3>
+          <a href="#">Cook Ware</a>
+          <a href="#">Electric Corner</a>
+          <a href="#">Infrastructure</a>
+        </div>
+        <div class="column">
+          <h3>Home Improvements</h3>
+          <a href="#">Cleaners</a>
+          <a href="#">Perfumes</a>
+          <a href="#">Sanitizer</a>
+        </div>
+        <div class="column">
+          <h3>Living Room</h3>
+          <a href="#">Lightning</a>
+          <a href="#">Dining Table</a>
+          <a href="#">Jugs</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Sport & Fitness 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content mega-dropdown">
+      <div class="row">
+        <div class="column">
+          <h3>Sport</h3>
+          <a href="#">Cricket</a>
+          <a href="#">Football</a>
+          <a href="#">Volley Ball</a>
+        </div>
+        <div class="column">
+          <h3>Fitness</h3>
+          <a href="#">Dumbells</a>
+          <a href="#">Mini-Set</a>
+          <a href="#">Powders</a>
+        </div>
+        <div class="column">
+          <h3>Featured</h3>
+          <a href="#">Suppliments</a>
+          <a href="#">Gadgets</a>
+          <a href="#">Kits</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Kids Store 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content mega-dropdown">
+      <div class="row">
+        <div class="column">
+          <h3>Toys</h3>
+          <a href="#">Dolls</a>
+          <a href="#">E-Gadgets</a>
+          <a href="#">Tabs</a>
+        </div>
+        <div class="column">
+          <h3>Books</h3>
+          <a href="#">Story Books</a>
+          <a href="#">Educational</a>
+          <a href="#">Guidlines</a>
+        </div>
+        <div class="column">
+          <h3>Care</h3>
+          <a href="#">Body Care</a>
+          <a href="#">Hair Care</a>
+          <a href="#">Growth</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Notifications</a>
+      <a href="#">Customer Care</a>
+      
+    </div>
+  </div> 
+  
+  <a href="#about">Coupons</a>
+  
+  <div class="dropdown responsive">
+    <button class="dropbtn">Account 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Profile</a>
+      <a href="#">Orders</a>
+      <a href="#">Wishlist</a>
+      <a href="./login.html">Login</a>
+    </div>
+  </div> 
+  
+  
+  <div class="dropdown responsive">
+    <button class="dropbtn"><i class="fa fa-shopping-cart"></i><span class="value">2</span>
+    </button>
+    <div class="dropdown-content">
+      <a>
+        
+        <ul>
+          <li>
+            <img src="https://i.ibb.co/RpnQq12/01.webp" alt="Item">
+          </li>
+          <li>
+      <span class="title">Samsung Galaxy POP</span>
+      <span class="sub-title"><i class="fa fa-rupee"></i>5999<span>
+      </li>
+      <li><i class="fa fa-trash"></i></li>
+      </ul>
+      <ul>
+      <li>
+      <img src="./images/kurkure .png" alt="Item">
+      </li>
+      <li>
+      <span class="title">Kurkure Masala Munch Namkeen, 142g</span>
+      <span class="sub-title"><i class="fa fa-rupee"></i>30<span>
+      </li>
+      <li><i class="fa fa-trash"></i></li>
+      </ul>
+      <button type="submit" onclick="cart()" class="btn1">CheckOut</button>
+      </a>
+    </div>
+  </div> 
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</header>
+
+
+<!--ADDS-->
+<center>
+  <div class="Advertisement">
+    <img class="myAdds" src=" " style="width:100%">
+    <img class="myAdds" src=" " style="width:100%">
+    <img class="myAdds" src=" " style="width:100%">
+  </div>
+  </center>
+  
+<!--CAROUSEL-->
+<div class="content-width">
+  <div class="slideshow">
+    <!-- Slideshow Items -->
+    <div class="slideshow-items">
+      <div class="item">
+        <div class="item-image-container">
+          <img class="item-image" src="./images/laptop-slider.png" />
+        </div>
+        <!-- Staggered Header Elements -->
+        <div class="item-header">
+          <span class="vertical-part"><b><em> Shop Laptop <br> Supercharge .SuperLight</em></em></b></span>
+        </div>
+        <!-- Staggered Description Elements -->
+        <div class="item-description">
+          <span class="vertical-part desc" style="color:#fff;">
+            <b>Offers you cannot miss! upto 10% off</b>
+          </span>  
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-image-container">
+          <img class="item-image" src="./images/Lights_PC.gif" />
+        </div>
+        <!-- Staggered Header Elements -->
+        <div class="item-header">
+          <span class="vertical-part"><b><em>Top Deals On </em></b></span>
+        </div>
+        <!-- Staggered Description Elements -->
+        <div class="item-description">
+          <span class="vertical-part desc" style="color:#fff;">
+            <b>Upto 60% off on cart value more than <i class="fa fa-rupee"></i>5000</b>
+          </span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-image-container">
+          <img class="item-image" src="./images/beauty-slide.png" />
+        </div>
+        <!-- Staggered Header Elements -->
+        <div class="item-header">
+          <span class="vertical-part" style="color:#fff;"><b>ShopNow On <em>E-Commerce</em></b></span>
+        </div>
+        <!-- Staggered Description Elements -->
+        <div class="item-description">
+          <span class="vertical-part desc" style="color:#fff;">
+            <b> “If you want to glow like me, you must take care of your skin. I never sleep in my makeup”.</b>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <ul>
+        <li class="control" data-index="0"></li>
+        <li class="control" data-index="1"></li>
+        <li class="control" data-index="2"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<section class="section1">
+<div class="add-card" style="background: linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url(./images/apple-store-discount.png);">
+<section>
+<span class="title">Student Discount</span>
+<span class="sub-title">Upto 10% Off On Apple Products</span>
+<a href="" onclick="cart()" class="btn1">Grab Now</a>
+</section>
+</div>
+<div class="add-card" style="background: linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url(./images/Electric\ Allpicances.jpeg);">
+<section>
+<span class="title">New Year Discount</span>
+<span class="sub-title">Upto 35% Off On Electric Allpicances</span>
+<a href="" onclick="cart()" class="btn1">Grab Now</a>
+</section>
+</div>
+<div class="add-card" style="background: linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url(./images/Cosmetics\ Products\ &\ Beauty.jpeg);">
+<section>
+<span class="title">Cosmetics & Beauty </span>
+<span class="sub-title">Upto 25% Off On Washing Machines</span>
+<a href="" onclick="cart()" class="btn1">Grab Now</a>
+</section>
+</div>
+</section>
+
+
+<h1 class="title section2-header">DEALS OF THE DAY <span id="timer"><i class="fa fa-clock-o"></i></span></h1>
+<section class="section2">
+<div class="deal-card">
+<img src="./images/iphone (128 GB) - Black.png" alt="Deals">
+<span class="discount"><i class="fa fa-percentage"></i> 20% OFF</span>
+<span class="tag-2"><i class="fa fa-times"></i> Sold Out</span>
+<span class="title">Apple iPhone 15 </span>
+<span class="sub-title">(128 GB) - Black 15 cm (6.1-inch) Super Retina XDR display
+  Cinematic mode adds shallow depth of field and shifts focus automatically in your videos
+  Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording</span>
+<a href="#" class="btn1 soldout">SoldOut</a>
+</div>
+
+<div class="deal-card">
+<img src="./images/Samsung Galaxy S24 Ultra 5G.png" alt="Deals">
+<span class="discount"><i class="fa fa-percentage"></i> 12% OFF</span>
+<span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+<span class="title">Samsung Galaxy S24 Ultra 5G </span>
+<span class="sub-title">AI Smartphone (Titanium Gray, 12GB, 256GB Storage ).</span>
+<a href="#" onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>1,29,999</a>
+</div>
+
+<div class="deal-card">
+<img src="./images/Sony Alpha ILCE-6100Y.png" alt="Deals">
+<span class="discount"><i class="fa fa-percentage"></i> 15% OFF</span>
+<span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+<span class="title">Sony Alpha ILCE-6100Y 24.2 MP Mirrorless Digital SLR Camera</span>
+<span class="sub-title">16-50 mm & 55-210 mm Zoom Lenses, APS-C Sensor,  Content Creation -Black.</span>
+<a href="#" onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>73,990</a>
+</div>
+
+<div class="deal-card">
+<img src="./images/Woodiography Wooden Pendant lamp.png" alt="Deals">
+<span class="discount"><i class="fa fa-percentage"></i> 5% OFF</span>
+<span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+<span class="title">WOODIOGRAPHY Wooden Ceiling lamp </span>
+<span class="sub-title">Wooden Hanging lamp handicrafted Home decore Chandelier Light.</span>
+<a href="#" onclick="cart()" class="btn1"><i class="fa fa-rupee"></i> 2,449</a>
+</div>
+
+<div class="deal-card">
+<img src="./images/Silver Golden Delicate Pearl Necklace.jpg" alt="Deals">
+<span class="discount"><i class="fa fa-percentage"></i> 5% OFF</span>
+<span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+<span class="title">Silver Golden Delicate Pearl Necklace</span>
+<span class="sub-title">  Long Necklace with Earring Jewellery Set for Women Girls.</span>
+<a href="#" onclick="cart()" class="btn1"><i class="fa fa-rupee"></i> 10,599</a>
+</div>
+
+<div class="deal-card">
+<img src="./images/rog laptop.png" alt="Deals">
+<span class="discount"><i class="fa fa-percentage"></i> 20% OFF</span>
+<span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+<span class="title">ASUS ROG Strix G16 (2023)</span>
+<span class="sub-title"> 64WHrs Battery, Intel Core i5-13450HX 13th Gen, 16" FHD+ 165Hz, 6GB RTX 3050, Gaming Laptop (16GB/1TB SSD/Windows 11/Office 2021/4-Zone RGB KB/Gray/2.50 Kg) .</span>
+<a href="./product-view.html"  class="btn1"><i class="fa fa-rupee"></i>94,990</a>
+</div>
+
+
+ 
+</section>
+
+
+<div class="section3-header">
+<span class="title">BASED ON YOUR INTEREST</span>
+<a href="#" class="btn1 viewmore">View More</a>
+<button class="next" onclick='scrollright()'><i class="fa fa-angle-right"></i></button>
+<button class="previous" onclick='scrollleft()'><i class="fa fa-angle-left"></i></button>
+</div>
+<section class="section3" id="section3">
+<div class="discount-card">
+<img src="./images/Apple AirPods.png" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Apple AirPods Pro (2nd Generation) with MagSafe Case (USB‑C) ​​​​​​​(White)</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(200)
+</span>
+<span onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>2999</span> 
+<strike><i class="fa fa-rupee"></i>5200</strike>
+</div>
+
+<div class="discount-card">
+<img src="./images/Redmi Smart fire tv 4k.png" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Redmi 108 cm (43 inches) 4K Ultra HD Smart LED</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(1,030)
+</span>
+<span onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>23,999</span>
+ <strike><i class="fa fa-rupee"></i>42,999</strike>
+</div>
+
+<div class="discount-card">
+<img src="./images/Boult Audio Z40 Pro.png" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Boult Audio Z40 Pro with 100H Playtime, Quad Mic ENC, 45ms Low Latency Gaming, Premium</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(340)
+</span>
+<span onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>1,399</span> 
+<strike><i class="fa fa-rupee"></i>5,499</strike>
+</div>
+
+<div class="discount-card">
+<img src="./images/Prolific Men's Printed Sneakers.png" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Prolific Men's Printed Sneakers</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(5)
+</span>
+<span onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>748</span>
+ <strike><i class="fa fa-rupee"></i>2,660</strike>
+</div>
+
+<div class="discount-card">
+<img src="./images/Don't Believe Everything You Think (English).png" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Don't Believe Everything You Think (English) </span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(390)
+</span>
+<span onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>749</span>
+ <strike><i class="fa fa-rupee"></i>999</strike>
+</div>
+
+<div class="discount-card">
+<img src="./images/knife.png" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Voltonix Stainless Steel 3 Pieces Professional</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(713)
+</span>
+<span onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>699</span>
+ <strike><i class="fa fa-rupee"></i>1900</strike>
+</div>
+
+<div class="discount-card">
+<img src="https://i.ibb.co/RpnQq12/01.webp" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(1,030)
+</span>
+<span onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>9999</span> <strike><i class="fa fa-rupee"></i>10200</strike>
+</div>
+</section>
+  
+  
+<div class="section4-header">
+<span class="title">DISCOUNT CORNER</span>
+<a href="#" class="btn1 viewmore">View More</a>
+<button class="next" onclick='scrollright4()'><i class="fa fa-angle-right"></i></button>
+<button class="previous" onclick='scrollleft4()'><i class="fa fa-angle-left"></i></button>
+</div>
+<section class="section4" id="section4">
+<div class="discount-card">
+<img src="https://i.ibb.co/jGxYmxS/02.webp" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Chimney</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(930)
+</span>
+<span class="btn2">Fast Sold</span>
+</div>
+
+<div class="discount-card">
+<img src="./images/casio-watch.png" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Casino Men's Classic</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+(2,400)
+</span>
+<span class="btn2">Grab Now</span>
+</div>
+
+<div class="discount-card">
+  <img src="https://i.ibb.co/RpnQq12/01.webp" alt="Product">
+  <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+  <span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+  <span class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  (1,030)
+  </span>
+  <span onclick="cart()" class="btn1"><i class="fa fa-rupee"></i>9999</span> <strike><i class="fa fa-rupee"></i>10200</strike>
+  </div>
+  
+<div class="discount-card">
+<img src="https://i.ibb.co/Mgjcss5/03.webp" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Mixer Juice Grinder</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(230)
+</span>
+<span class="btn2">30% Off</span>
+</div>
+
+<div class="discount-card">
+<img src="./images/Electric Kettle.png " alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">XECH Electric Kettle </span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+(1,777)
+</span>
+<span class="btn2">Grab Now</span>
+</div>
+
+<div class="discount-card">
+<img src="https://i.ibb.co/jGxYmxS/02.webp" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Chimney</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(930)
+</span>
+<span class="btn2">Fast Sold</span>
+</div>
+
+<div class="discount-card">
+<img src="https://i.ibb.co/RpnQq12/01.webp" alt="Product">
+<a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+<span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+<span class="rating">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+(1,030)
+</span>
+<span onclick="cart()" class="btn1">New Eve Deal</span>
+</div>
+
+
+
+</section>
+
+
+ 
+
+ 
+
+
+
+<footer>
+<div class="footer">
+<ul>
+<li>E-Commerce</li>
+<li>
+<select>
+<option value="english">English</option>
+<option value="hindi">Hindi</option>
+<option value="chinese">Chinese</option>
+<option value="russian">Russian</option>
+
+ 
+</select>
+</li>
+<li>
+<select>
+  <option value="Rupees">Rs: Rupees</option>
+  <option value="Dollar">USD: US-Dollar</option>
+
+</select>
+</li>
+</ul>
+
+<ul>
+
+<li class="title">OTHER LINKS</li>
+<li>Contact Us</li>
+<li>Privacy Policy</li>
+<li>Terms & Conditions</li>
+<li>Tickets</li>
+<li>Customer Service</li>
+ 
+</ul>
+
+<ul>
+<li class="title">SHORTCUT</li>
+<li>Electronics</li>
+<li>Men & Women</li>
+<li>House Hold</li>
+<li>Sport & Fitness</li>
+<li>Books</li>
+<li>Kids Corner</li>
+</ul>
+
+<ul>
+<li class="title">LET HELP YOU</li>
+<li>Covid-19</li>
+<li>Your Account</li>
+<li>Shipping Rates</li>
+<li>Replacement</li>
+<li>Help</li>
+<li>
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+</li>
+</ul>
+</div>
+<div class="sub-footer">
+<em>E-Commerce</em> Copyright ©   - All rights reserved || Designed By: Ashish Yesale.
+</div>
+</footer>
+
+
+
+
+<!--ADDITIONAL-->
+<div id="id01" class="modal">
+  
+  <section class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    </section>
+</div>
+
+
+ 
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./shopping-cart/cart-style.css">
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link rel="stylesheet" href="./style.css">
+
+  
+  <div class="menu">
+  <table>
+  <tr>
+  <td><img src="./images/logo.png" alt="logo" class="logo"></td>
+  <td>
+  <input type="text" class="search" name="search" placeholder="Search"><button type="submit"><i class="fa fa-search"></i></button>
+  </td>
+  <td>
+  <span>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Account 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./home.html">Profile</a>
+        <a href="./home.html">Orders</a>
+        <a href="./home.html">Wishlist</a>
+        <a href="./login-signup-form/login.html">LogIn/LogOut</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn cart"><i class="fa fa-shopping-cart"></i> <span class="value">2</span>
+      </button>
+      <div class="dropdown-content cart-content">
+        <a>
+        <ul>
+        <li>
+        <img src="./images/Samsung Galaxy Book2.jpeg" alt="Item">
+        </li>
+        <li>
+        <span class="title">Samsung Galaxy Book2 </span>
+        <span class="sub-title"><i class="fa fa-rupee"></i>59,000<span>
+        </li>
+        <li><i class="fa fa-trash"></i></li>
+        </ul>
+        <ul>
+        <li>
+          <img src="./images/kurkure .png" alt="Item">
+      </li>
+      <li>
+      <span class="title">Kurkure Masala Munch Namkeen, 142g</span>
+      <span class="sub-title"><i class="fa fa-rupee"></i>30<span>
+        </li>
+        <li><i class="fa fa-trash"></i></li>
+        </ul>
+        <button type="submit"  onclick="cart()" class="btn1">CheckOut</button>
+        </a>
+      </div>
+    </div> 
+  </div>
+  </span>
+  </td>
+  </tr>
+  </table>
+  </div>
+  
+  <div class="topnav" id="myTopnav">
+    <div class="dropdown">
+      <button class="dropbtn">Electronics 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content mega-dropdown">
+        <div class="row  column1">
+          <div class="column">
+            <h3>Mobiles</h3>
+            <a href="./home.html">Mi</a>
+            <a href="./home.html">Samsung</a>
+            <a href="./home.html">RealMe</a>
+          </div>
+          <div class="column">
+            <h3>Mobile Accessories</h3>
+            <a href="./home.html">Power Bank</a>
+            <a href="./home.html">OTG</a>
+            <a href="./home.html">Covers</a>
+          </div>
+          <div class="column">
+            <h3>Speakers</h3>
+            <a href="./home.html">Home Theater</a>
+            <a href="./home.html">Portable</a>
+            <a href="./home.html">Sound Bars</a>
+          </div>
+          <div class="column">
+            <h3>Featured</h3>
+            <a href="./home.html">Apple Store</a>
+            <a href="./home.html">Mcrosoft Store</a>
+            <a href="./home.html">Inferno Store</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="dropdown">
+      <button class="dropbtn">Men & Women 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content mega-dropdown">
+        <div class="row">
+          <div class="column">
+            <h3>Clothing</h3>
+            <a href="./home.html">Men Jeans</a>
+            <a href="./home.html">Women Jeggings</a>
+            <a href="./home.html">Trousers</a>
+          </div>
+          <div class="column">
+            <h3>Grooming</h3>
+            <a href="./home.html">Perfumes</a>
+            <a href="./home.html">Deodrants</a>
+            <a href="./home.html">Hair Groom</a>
+          </div>
+          <div class="column">
+            <h3>Footware</h3>
+            <a href="./home.html">Casual</a>
+            <a href="./home.html">Boots</a>
+            <a href="./home.html">Slippers</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="dropdown">
+      <button class="dropbtn">Home & Furniture 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content mega-dropdown">
+        <div class="row">
+          <div class="column">
+            <h3>Kitchen</h3>
+            <a href="./home.html">Cook Ware</a>
+            <a href="./home.html">Electric Corner</a>
+            <a href="./home.html">Infrastructure</a>
+          </div>
+          <div class="column">
+            <h3>Home Improvements</h3>
+            <a href="./home.html">Cleaners</a>
+            <a href="./home.html">Perfumes</a>
+            <a href="./home.html">Sanitizer</a>
+          </div>
+          <div class="column">
+            <h3>Living Room</h3>
+            <a href="./home.html">Lightning</a>
+            <a href="./home.html">Dining Table</a>
+            <a href="./home.html">Jugs</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="dropdown">
+      <button class="dropbtn">Sport & Fitness 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content mega-dropdown">
+        <div class="row">
+          <div class="column">
+            <h3>Sport</h3>
+            <a href="./home.html">Cricket</a>
+            <a href="./home.html">Football</a>
+            <a href="./home.html">Volley Ball</a>
+          </div>
+          <div class="column">
+            <h3>Fitness</h3>
+            <a href="./home.html">Dumbells</a>
+            <a href="./home.html">Mini-Set</a>
+            <a href="./home.html">Powders</a>
+          </div>
+          <div class="column">
+            <h3>Featured</h3>
+            <a href="./home.html">Suppliments</a>
+            <a href="./home.html">Gadgets</a>
+            <a href="./home.html">Kits</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="dropdown">
+      <button class="dropbtn">Kids Store 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content mega-dropdown">
+        <div class="row">
+          <div class="column">
+            <h3>Toys</h3>
+            <a href="./home.html">Dolls</a>
+            <a href="./home.html">E-Gadgets</a>
+            <a href="./home.html">Tabs</a>
+          </div>
+          <div class="column">
+            <h3>Books</h3>
+            <a href="./home.html">Story Books</a>
+            <a href="./home.html">Educational</a>
+            <a href="./home.html">Guidlines</a>
+          </div>
+          <div class="column">
+            <h3>Care</h3>
+            <a href="./home.html">Body Care</a>
+            <a href="./home.html">Hair Care</a>
+            <a href="./home.html">Growth</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="dropdown">
+      <button class="dropbtn">More 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./home.html">Notifications</a>
+        <a href="./home.html">Customer Care</a>
+        <a href="./home.html">Download App</a>
+      </div>
+    </div> 
+    
+    <a href="#about">Coupons</a>
+    
+    <div class="dropdown responsive">
+      <button class="dropbtn">Account 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./home.html">Profile</a>
+        <a href="./home.html">Orders</a>
+        <a href="./home.html">Wishlist</a>
+        <a href="./login-signup-form/login.html">Login</a>
+      </div>
+    </div> 
+    
+    
+    <div class="dropdown responsive">
+      <button class="dropbtn"><i class="fa fa-shopping-cart"></i><span class="value">2</span>
+      </button>
+      <div class="dropdown-content">
+        <a>
+              <ul>
+        <li>
+        <img src="./images/Samsung Galaxy Book2.jpeg" alt="laptop">
+        </li>
+        <li>
+        <span class="title">Samsung Galaxy Book2  </span>
+        <span class="sub-title"><i class="fa fa-rupee"></i>5999<span>
+        </li>
+        <li><i class="fa fa-trash"></i></li>
+        </ul>
+        <ul>
+        <li>
+          <img src="./images/kurkure .png" alt="kurkure">
+        </li>
+        <li>
+        <span class="title">Kurkure Masala Munch Namkeen, 142g</span>
+        <span class="sub-title"><i class="fa fa-rupee"></i>30<span>
+        </li>
+        <li><i class="fa fa-trash"></i></li>
+        </ul>
+        <button type="submit" onclick="cart()" class="btn1">CheckOut</button>
+        </a>
+      </div>
+    </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </header>
+  
+  
+<body>
+<!-- partial:index.partial.html -->
+<h1>Shopping Cart</h1>
+
+<div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="./images/kurkure .png">
+    </div>
+    <div class="product-details">
+      <div class="product-title">  Kurkure Masala Munch Namkeen, 142g</div>
+      <p class="product-description">  <br>Zero trans fat
+        <br>Crunchy and crisp chips
+        <br>Made with good quality ingredients
+        <br>A great combination of spice and crunch
+        <br>No added preservatives
+        <br>material_features:Vegetarian</p>
+    </div>
+    <div class="product-price">30</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">60</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="./images/Samsung Galaxy Book2.jpeg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Samsung Galaxy Book2</div>
+      <p class="product-description">
+        <br> Brand	Samsung
+        <br> Model Name	Galaxy Book2
+        <br>Screen Size	15.6
+        <br>Colour	Graphite
+        <br>Hard Disk Size	512 GB
+        <br>CPU Model	Others
+        <br>RAM Memory Installed Size	16 GB
+        <br>Operating System	Windows 11 Home
+        <br>Special Feature	Fingerprint Reader
+        <br>Graphics Card Description	Integrated
+         </p>
+    </div>
+    <div class="product-price">59,900</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">59,900.00</div>
+  </div>
+
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">59,960.00</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (18%)</label>
+      <div class="totals-value" id="cart-tax">10,792.80</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">00.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">70,752.80</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+<!-- partial --> 
+  <script  src="./shopping-cart/cart-script.js"></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
