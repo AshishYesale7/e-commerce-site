@@ -1,5 +1,4 @@
-//Hey you! Thanks for checking this pen. :) I open source it as library. https://github.com/greenwoodents/quickbeam.js
-
+ 
 var Quickbeam = (function () {
   // Instance stores a reference to the Singleton
   var instance;
